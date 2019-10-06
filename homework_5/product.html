@@ -2,42 +2,53 @@
 <html>
 <head>
 	<nav>
-   		<a href="./home.html"><img src=https://i.ibb.co/9qS6Ytc/bun-bun-logo.png alt= "Bun Bun Bakeshop Logo" height="111"/></a>
-   		<img src=https://i.ibb.co/6NRW3dS/about.png alt= "ABOUT" height="111"/>
-   		<a href="./browsing.html"><img src=https://i.ibb.co/JcJyTFd/menu.png alt= "MENU" height="111"/></a>
-   		<img src=https://i.ibb.co/4KH2yrc/nav-bar.png alt= "NAVIGATION" height="111"/>
-     </nav>
+		<ul>
+			<li><a href="./home.html"><img src=https://i.ibb.co/7WkhmhV/logo.png alt= "Bun Bun Bakeshop Logo" height="75"/></a></li>
+			<li><div class=nav>ABOUT</div></li>
+			<li><div class=nav><a href="./browsing.html">MENU</a></div></li>
+			<li><div class=nav>LOCATIONS</div></li>
+			<li><div class=nav>CONTACT</div></li>
+			<li><div class=nav><img src=https://i.ibb.co/ypBRDVq/nav.png alt= "ACCOUNT & CART" height="30"/></div></li>
+   		</ul>
+    </nav>
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
-<body>
-<form action="submission.html" method="POST">
-  	<h1>PUMPKIN SPICE CINNAMON ROLL</h1>
-  	<img src= alt= "PUMPKIN SPICE" width="" height=""/>
-  	<section class="glaze">
-          <label for="glaze">GLAZE</label>
-          <select name="glaze" id="glaze">
-            <option value="none">NONE</option>
-            <option value="sugar milk">SUGAR MILK</option>
-            <option value="vanilla milk">VANILLA MILK</option>
-            <option value="double chocolate">DOUBLE CHOCOLATE</option>
-          </select>
-        </section>
+<ul>
+	<li><h1>PUMPKIN SPICE CINNAMON ROLL</h1></li>
+</ul>
 
+<ul>
+	<li><div id=roll><img src=https://i.ibb.co/09v1H1S/psroll.png alt= "PUMPKIN SPICE CINNAMON ROLL" height="250"/></div></li>
+	<li><div id=pictures><img src=https://i.ibb.co/SRKHprv/pics.png alt= "More Pictures" height="250"/></div></li>
+	<li><h3>DESCRIPTION</h3>
+		<p>Perfect for the fall, our pumpkin spice cinnamon roll is made with<br> real pumpkin and filled with warm spices like cinnamon, nutmeg,<br> and cloves, then baked to golden perfection and topped with your<br> choice of one of our delicious glazes.</p>
+		<h3>ALLERGENS: MILK, EGGS, WHEAT</h3>
+		<ul>
+			<li><section class="glaze">
+	        	<select name="glaze" id="glaze">
+	        		<option value="glaze">GLAZE</option>
+		            <option value="none">NONE</option>
+		            <option value="sugar milk">SUGAR MILK</option>
+		            <option value="vanilla milk">VANILLA MILK</option>
+		            <option value="double chocolate">DOUBLE CHOCOLATE</option>
+	    	</select></section></li>
+	    	<li><section class="quantity">
+            	<select name="quantity" id="quantity">
+            		<option value="quantity">QUANTITY</option>
+	            	<option value="1">1</option>
+	            	<option value="3">3</option>
+	            	<option value="6">6</option>
+	            	<option value="12">12</option>
+        	</select></section></li>
+        	<li><section class="submission">
+        		<input type="submit" value="ADD TO ORDER"></section></li>
+			<li><h3>TOTAL PRICE: $</h3></li>
+		</ul>
+</ul>
 
-    <section class="quantity">
-          <label for="quantity">QUANTITY</label>
-          <select name="quantity" id="quantity">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="6">6</option>
-            <option value="12">12</option>
-          </select>
-        </section>
+<div id=ingredients>
+	<p>INGREDIENTS: Whole Milk, Vegetable Oil, Granulated Sugar, Yeast,<br> Pumpkin Puree, All Purpose Flour, Cinnamon, Ginger, Nutmeg, Cloves,<br> Baking Powder, Baking Soda, Salt, Butter, Brown Sugar</p>
+</div>
 
-
-	<section class="submission">
-          <input type="submit" value="Submit">
-        </section>
-      </form>
-  </body>
 </html>
